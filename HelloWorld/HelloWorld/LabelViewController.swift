@@ -2,8 +2,7 @@
 //  LabelViewController.swift
 //  iOS8SampleCode
 //
-//  Created by Miranda, Vinita (US - Mumbai) on 6/5/14.
-//  Copyright (c) 2014 Deloitte. All rights reserved.
+//  Copyright (c) 2014 Vinita. All rights reserved.
 //
 
 import UIKit

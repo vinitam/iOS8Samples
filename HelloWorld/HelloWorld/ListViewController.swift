@@ -11,7 +11,7 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     @IBOutlet var tableView : UITableView
 
-    var listItems = ["Text Field","Table View","Label"]
+    var listItems = ["Login example","Text Field","Table View","Label"]
     
     override func viewDidLoad() {
         title = "iOS 8"
@@ -49,10 +49,15 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         else if indexPath.row == 1
         {
+            var textFieldViewController :TextFieldViewController = self.storyboard.instantiateViewControllerWithIdentifier("TextFieldViewController") as TextFieldViewController
+            self.navigationController.pushViewController(textFieldViewController, animated: true)
+        }
+        else if indexPath.row == 2
+        {
             var tableViewListingController :TableViewListingController = self.storyboard.instantiateViewControllerWithIdentifier("TableViewListingController") as TableViewListingController
             self.navigationController.pushViewController(tableViewListingController, animated: true)
         }
-        else if indexPath.row == 2
+        else if indexPath.row == 3
         {
             var labelViewController :LabelViewController = self.storyboard.instantiateViewControllerWithIdentifier("LabelViewController") as LabelViewController
             self.navigationController.pushViewController(labelViewController, animated: true)

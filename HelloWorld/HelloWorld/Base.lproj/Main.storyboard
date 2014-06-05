@@ -19,7 +19,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vbo-K0-rWW">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="39" y="166" width="398" height="30"/>
                                 </variation>
@@ -74,7 +74,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Vbo-K0-rWW"/>
@@ -133,7 +132,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0dV-6U-ByX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Dg-J6-66S">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bmw-P8-z0e">
@@ -191,7 +190,6 @@
                             <constraint firstAttribute="trailing" secondItem="Bmw-P8-z0e" secondAttribute="trailing" id="r67-be-5Gf"/>
                             <constraint firstItem="Bmw-P8-z0e" firstAttribute="leading" secondItem="3Dg-J6-66S" secondAttribute="leading" id="yHI-vt-FXt"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Bmw-P8-z0e"/>
@@ -242,7 +240,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZL3-xm-juj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Q8v-LN-7Jc">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NM2-NE-Wrc">
@@ -263,7 +261,6 @@
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="top" secondItem="Q8v-LN-7Jc" secondAttribute="top" id="IfH-al-Dqr"/>
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="leading" secondItem="Q8v-LN-7Jc" secondAttribute="leading" id="P6h-Ug-zlp"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="NM2-NE-Wrc"/>
@@ -325,7 +322,6 @@
                             <constraint firstAttribute="bottom" secondItem="6Pc-Sh-DIy" secondAttribute="bottom" constant="-2" id="fZO-8F-TRW"/>
                             <constraint firstItem="6Pc-Sh-DIy" firstAttribute="top" secondItem="ada-15-USh" secondAttribute="top" constant="62" id="gg1-CU-BRB"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6Pc-Sh-DIy"/>
@@ -385,7 +381,6 @@
                             <constraint firstItem="tVU-da-6aA" firstAttribute="top" secondItem="CaQ-cl-5Ab" secondAttribute="top" constant="62" id="S7j-gi-4Bi"/>
                             <constraint firstAttribute="trailing" secondItem="tVU-da-6aA" secondAttribute="trailing" id="s3D-Zy-FW2"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="tVU-da-6aA"/>
@@ -426,9 +421,10 @@
                         <viewControllerLayoutGuide type="bottom" id="diZ-hr-7bk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sAZ-Rd-LS6">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-5t-gX2">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-5t-gX2">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -439,7 +435,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ncN-5t-gX2"/>
@@ -471,7 +466,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5z-Qr-2Wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -487,6 +481,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eza-f5-siF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LgW-PH-noi">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-L1-WUi">
@@ -509,7 +504,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Frl-L1-WUi"/>
@@ -531,6 +525,111 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7Y-FN-dqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4486.5" y="136.5"/>
+        </scene>
+        <!--Text Field View Controller-->
+        <scene sceneID="28S-Vh-IEb">
+            <objects>
+                <viewController storyboardIdentifier="TextFieldViewController" id="hgY-je-wbQ" customClass="TextFieldViewController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pHq-BY-py1"/>
+                        <viewControllerLayoutGuide type="bottom" id="tYu-sv-2kO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zPF-CY-Ugk">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2jW-OK-3LQ">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="182" width="273" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="hgY-je-wbQ" id="lNj-kL-CTU"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple text field" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1K-iE-nNC">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="146" width="172" height="20.5"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5G-Xj-kGn">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="267" width="273" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="hgY-je-wbQ" id="xhm-E8-NMU"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secure text field" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rj6-QH-NLT">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="231" width="172" height="20.5"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fko-j5-Mhe">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="355" width="273" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="hgY-je-wbQ" id="Mlu-w0-dMq"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number text field" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okx-gC-cO7">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="319" width="230" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2jW-OK-3LQ"/>
+                                <exclude reference="Q1K-iE-nNC"/>
+                                <exclude reference="O5G-Xj-kGn"/>
+                                <exclude reference="rj6-QH-NLT"/>
+                                <exclude reference="fko-j5-Mhe"/>
+                                <exclude reference="okx-gC-cO7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2jW-OK-3LQ"/>
+                                <include reference="Q1K-iE-nNC"/>
+                                <include reference="O5G-Xj-kGn"/>
+                                <include reference="rj6-QH-NLT"/>
+                                <include reference="fko-j5-Mhe"/>
+                                <include reference="okx-gC-cO7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="keyboardTextField" destination="fko-j5-Mhe" id="0xS-hY-sOS"/>
+                        <outlet property="secureTextField" destination="O5G-Xj-kGn" id="qnd-OB-dT1"/>
+                        <outlet property="simpleTextField" destination="2jW-OK-3LQ" id="r1U-XC-Omy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qi4-T2-seL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5014.5" y="134.25"/>
         </scene>
     </scenes>
 </document>

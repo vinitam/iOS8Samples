@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIGestureRecognizerDelegate {
     
     @IBOutlet var userName : UITextField
     
@@ -20,6 +20,11 @@ class ViewController: UIViewController {
     @IBOutlet var cancelButton : UIButton
     
     override func viewDidLoad() {
+        
+        var tapGesture : UIGestureRecognizer = UIGestureRecognizer(target: self, action: "")
+        tapGesture.delegate = self
+        view.addGestureRecognizer(tapGesture)
+        
         super.viewDidLoad()
 
     }
@@ -60,6 +65,19 @@ class ViewController: UIViewController {
 
     }
 
+    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!)
+    {
+        var touch : UITouch = touches.allObjects[0] as UITouch
+        var location: CGPoint = touch.locationInView(view)
+        
+        if touch.view == view
+        {
+            view.frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)
+            userName.resignFirstResponder()
+            password.resignFirstResponder()
+            
+        }
+    }
 
 }
 
