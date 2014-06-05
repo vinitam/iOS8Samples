@@ -127,7 +127,7 @@
         <!--List View Controller-->
         <scene sceneID="GgV-Fq-nF0">
             <objects>
-                <viewController storyboardIdentifier="ListViewController" id="3G9-ji-dA7" customClass="ListViewController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" automaticallyAdjustsScrollViewInsets="NO" id="3G9-ji-dA7" customClass="ListViewController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tjn-aG-9sM"/>
                         <viewControllerLayoutGuide type="bottom" id="0dV-6U-ByX"/>
@@ -180,8 +180,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Bmw-P8-z0e" secondAttribute="bottom" id="XFW-jI-13M"/>
-                            <constraint firstItem="Bmw-P8-z0e" firstAttribute="top" secondItem="3Dg-J6-66S" secondAttribute="top" constant="20" id="oYs-fI-SFh"/>
+                            <constraint firstAttribute="trailing" secondItem="Bmw-P8-z0e" secondAttribute="trailing" id="65m-lh-q2F"/>
+                            <constraint firstItem="Bmw-P8-z0e" firstAttribute="leading" secondItem="3Dg-J6-66S" secondAttribute="leading" id="IOs-AW-dZM"/>
+                            <constraint firstAttribute="bottom" secondItem="Bmw-P8-z0e" secondAttribute="bottom" constant="-2" id="ULv-uX-dY0"/>
+                            <constraint firstAttribute="bottom" secondItem="Bmw-P8-z0e" secondAttribute="bottom" id="XFW-jI-13M">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-2"/>
+                            </constraint>
+                            <constraint firstItem="Bmw-P8-z0e" firstAttribute="top" secondItem="3Dg-J6-66S" secondAttribute="top" id="oYs-fI-SFh"/>
+                            <constraint firstItem="Bmw-P8-z0e" firstAttribute="top" secondItem="3Dg-J6-66S" secondAttribute="top" id="pLu-Zb-cgf"/>
                             <constraint firstAttribute="trailing" secondItem="Bmw-P8-z0e" secondAttribute="trailing" id="r67-be-5Gf"/>
                             <constraint firstItem="Bmw-P8-z0e" firstAttribute="leading" secondItem="3Dg-J6-66S" secondAttribute="leading" id="yHI-vt-FXt"/>
                         </constraints>
@@ -191,8 +197,12 @@
                                 <exclude reference="Bmw-P8-z0e"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="65m-lh-q2F"/>
+                                <exclude reference="IOs-AW-dZM"/>
+                                <exclude reference="ULv-uX-dY0"/>
                                 <exclude reference="XFW-jI-13M"/>
                                 <exclude reference="oYs-fI-SFh"/>
+                                <exclude reference="pLu-Zb-cgf"/>
                                 <exclude reference="r67-be-5Gf"/>
                                 <exclude reference="yHI-vt-FXt"/>
                             </mask>
@@ -202,13 +212,18 @@
                                 <include reference="Bmw-P8-z0e"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="65m-lh-q2F"/>
+                                <include reference="IOs-AW-dZM"/>
+                                <exclude reference="ULv-uX-dY0"/>
                                 <include reference="XFW-jI-13M"/>
                                 <include reference="oYs-fI-SFh"/>
+                                <include reference="pLu-Zb-cgf"/>
                                 <include reference="r67-be-5Gf"/>
                                 <include reference="yHI-vt-FXt"/>
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="aS8-rj-e4p"/>
                     <connections>
                         <outlet property="tableView" destination="Bmw-P8-z0e" id="0Df-S6-dJ4"/>
@@ -233,9 +248,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NM2-NE-Wrc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="HeI-LW-Fr7" id="D9T-TX-MOf"/>
                                     <outlet property="delegate" destination="HeI-LW-Fr7" id="MhO-Dh-CCS"/>
@@ -245,7 +257,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="NM2-NE-Wrc" secondAttribute="trailing" id="6Yd-3l-WL9"/>
-                            <constraint firstAttribute="bottom" secondItem="NM2-NE-Wrc" secondAttribute="bottom" id="7GY-It-XlX"/>
+                            <constraint firstAttribute="bottom" secondItem="NM2-NE-Wrc" secondAttribute="bottom" id="7GY-It-XlX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-64"/>
+                            </constraint>
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="top" secondItem="Q8v-LN-7Jc" secondAttribute="top" id="IfH-al-Dqr"/>
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="leading" secondItem="Q8v-LN-7Jc" secondAttribute="leading" id="P6h-Ug-zlp"/>
                         </constraints>
