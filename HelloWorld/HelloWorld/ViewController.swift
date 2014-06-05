@@ -40,11 +40,16 @@ class ViewController: UIViewController {
                     viewController.passedUsername = self.userName.text
                     self.navigationController.pushViewController(viewController, animated: true)
                 }
-                else
+                else if userName.text == "" && password.text == ""
                 {
-                    var registerViewController :RegisterViewController = self.storyboard.instantiateViewControllerWithIdentifier("RegisterViewController") as   RegisterViewController
-                    self.navigationController.pushViewController(registerViewController, animated: true)
+                    let alertController = UIAlertController(title: "Error"   , message: "Incomplete fields", preferredStyle: .Alert)
+                    
+                    let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { action in
+                    }
+                    alertController.addAction(cancelAction)
+                    presentViewController(alertController, animated: true, completion: nil)
                 }
+
             case self.cancelButton:
                 userName.resignFirstResponder();
                 password.resignFirstResponder();
