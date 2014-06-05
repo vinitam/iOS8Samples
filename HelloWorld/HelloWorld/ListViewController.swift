@@ -52,6 +52,12 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             var tableViewListingController :TableViewListingController = self.storyboard.instantiateViewControllerWithIdentifier("TableViewListingController") as TableViewListingController
             self.navigationController.pushViewController(tableViewListingController, animated: true)
         }
+        else if indexPath.row == 2
+        {
+            var labelViewController :LabelViewController = self.storyboard.instantiateViewControllerWithIdentifier("LabelViewController") as LabelViewController
+            self.navigationController.pushViewController(labelViewController, animated: true)
+        }
+        
     }
     
 

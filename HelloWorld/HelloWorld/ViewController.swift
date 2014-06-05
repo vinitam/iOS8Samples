@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         switch sender
         {
             case self.loginbutton:
-                println("\(userName.text)")
                 if userName.text != "" && password.text != ""
                 {
                     var viewController :LoggedInViewController = self.storyboard.instantiateViewControllerWithIdentifier("LoggedInViewController") as   LoggedInViewController

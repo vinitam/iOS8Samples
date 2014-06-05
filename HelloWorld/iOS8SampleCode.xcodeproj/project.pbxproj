@@ -19,6 +19,7 @@
 		CDB75F061940650600F19530 /* TableViewListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB75F051940650600F19530 /* TableViewListingController.swift */; };
 		CDE8C369193F2FC900F4F75B /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8C368193F2FC900F4F75B /* DetailedViewController.swift */; };
 		EFC2B2161940BBCB004998B2 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2B2151940BBCB004998B2 /* LoggedInViewController.swift */; };
+		EFC2B21A1940C724004998B2 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2B2191940C724004998B2 /* LabelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CDB75F051940650600F19530 /* TableViewListingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewListingController.swift; sourceTree = "<group>"; };
 		CDE8C368193F2FC900F4F75B /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		EFC2B2151940BBCB004998B2 /* LoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		EFC2B2191940C724004998B2 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				CD61E9D319406A19005B8068 /* SimpleTableViewController.swift */,
 				EFC2B2151940BBCB004998B2 /* LoggedInViewController.swift */,
 				CDE8C368193F2FC900F4F75B /* DetailedViewController.swift */,
+				EFC2B2191940C724004998B2 /* LabelViewController.swift */,
 				CDAAB8C619402AAF007C10DA /* Constant.h */,
 				CD2F0D64193F16A9007C8BF8 /* Main.storyboard */,
 				CDAAB8C919403540007C10DA /* ListTableViewCell.swift */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD61E9D21940670E005B8068 /* GroupedTableViewController.swift in Sources */,
+				EFC2B21A1940C724004998B2 /* LabelViewController.swift in Sources */,
 				CD2F0D63193F16A9007C8BF8 /* ViewController.swift in Sources */,
 				CD2F0D61193F16A9007C8BF8 /* AppDelegate.swift in Sources */,
 				CD61E9D419406A19005B8068 /* SimpleTableViewController.swift in Sources */,
