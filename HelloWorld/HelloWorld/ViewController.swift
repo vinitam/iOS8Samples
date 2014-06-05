@@ -33,16 +33,22 @@ class ViewController: UIViewController {
         switch sender
         {
             case self.loginbutton:
-                if self.userName.text != " " && self.password.text != " "
+                println("\(userName.text)")
+                if userName.text != "" && password.text != ""
                 {
-                    println("valid credentials")
+                    var viewController :LoggedInViewController = self.storyboard.instantiateViewControllerWithIdentifier("LoggedInViewController") as   LoggedInViewController
+                    viewController.passedUsername = self.userName.text
+                    self.navigationController.pushViewController(viewController, animated: true)
                 }
                 else
                 {
-                    println("invalid credentials")
+                    var registerViewController :RegisterViewController = self.storyboard.instantiateViewControllerWithIdentifier("RegisterViewController") as   RegisterViewController
+                    self.navigationController.pushViewController(registerViewController, animated: true)
                 }
             case self.cancelButton:
-                println("Cancel button clicked")
+                userName.resignFirstResponder();
+                password.resignFirstResponder();
+            
             default:
                 println("invalid button clicked")
             

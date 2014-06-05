@@ -74,6 +74,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Vbo-K0-rWW"/>
@@ -184,6 +185,7 @@
                             <constraint firstAttribute="trailing" secondItem="Bmw-P8-z0e" secondAttribute="trailing" id="r67-be-5Gf"/>
                             <constraint firstItem="Bmw-P8-z0e" firstAttribute="leading" secondItem="3Dg-J6-66S" secondAttribute="leading" id="yHI-vt-FXt"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Bmw-P8-z0e"/>
@@ -244,6 +246,7 @@
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="top" secondItem="Q8v-LN-7Jc" secondAttribute="top" constant="62" id="IfH-al-Dqr"/>
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="leading" secondItem="Q8v-LN-7Jc" secondAttribute="leading" id="P6h-Ug-zlp"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="NM2-NE-Wrc"/>
@@ -303,6 +306,7 @@
                             <constraint firstAttribute="bottom" secondItem="6Pc-Sh-DIy" secondAttribute="bottom" constant="-2" id="fZO-8F-TRW"/>
                             <constraint firstItem="6Pc-Sh-DIy" firstAttribute="top" secondItem="ada-15-USh" secondAttribute="top" constant="62" id="gg1-CU-BRB"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6Pc-Sh-DIy"/>
@@ -362,6 +366,7 @@
                             <constraint firstItem="tVU-da-6aA" firstAttribute="top" secondItem="CaQ-cl-5Ab" secondAttribute="top" constant="62" id="S7j-gi-4Bi"/>
                             <constraint firstAttribute="trailing" secondItem="tVU-da-6aA" secondAttribute="trailing" id="s3D-Zy-FW2"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="tVU-da-6aA"/>
@@ -393,6 +398,90 @@
             </objects>
             <point key="canvasLocation" x="2812.5" y="142.5"/>
         </scene>
+        <!--Logged In View Controller-->
+        <scene sceneID="ekZ-xo-AsA">
+            <objects>
+                <viewController storyboardIdentifier="LoggedInViewController" id="fln-5D-L4F" customClass="LoggedInViewController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wxr-ub-l7G"/>
+                        <viewControllerLayoutGuide type="bottom" id="diZ-hr-7bk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sAZ-Rd-LS6">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-5t-gX2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="80" width="275" height="146"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ncN-5t-gX2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ncN-5t-gX2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="ncN-5t-gX2" id="LDa-ag-Iys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="420-KB-XGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3412.5" y="138.75"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="8MN-x7-AXH">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="2P0-3c-CsB" customClass="RegisterViewController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x9V-Cf-GDb"/>
+                        <viewControllerLayoutGuide type="bottom" id="HxB-g6-xuy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m2P-3t-0hP">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="qA0-9y-daV">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="58" width="280" height="143"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="qA0-9y-daV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="qA0-9y-daV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="registerLabel" destination="qA0-9y-daV" id="VgP-bz-pmn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKv-Kz-2QU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3921" y="138"/>
+        </scene>
         <!--Detailed View Controller-->
         <scene sceneID="YLN-3i-Y6z">
             <objects>
@@ -405,11 +494,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5z-Qr-2Wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3486" y="144.75"/>
+            <point key="canvasLocation" x="4429.5" y="138.75"/>
         </scene>
     </scenes>
 </document>
