@@ -20,10 +20,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     @IBOutlet var cancelButton : UIButton
     
     override func viewDidLoad() {
-        
-        var tapGesture : UIGestureRecognizer = UIGestureRecognizer(target: self, action: "")
-        tapGesture.delegate = self
-        view.addGestureRecognizer(tapGesture)
+
         
         super.viewDidLoad()
 
@@ -55,8 +52,11 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
                 }
 
             case self.cancelButton:
+                userName.text = ""
+                password.text = ""
                 userName.resignFirstResponder();
                 password.resignFirstResponder();
+            
             
             default:
                 println("invalid button clicked")
@@ -78,6 +78,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
             
         }
     }
+
 
 }
 
