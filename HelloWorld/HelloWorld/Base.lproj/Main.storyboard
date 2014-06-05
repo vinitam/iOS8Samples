@@ -221,7 +221,7 @@
         <!--Table View Listing Controller-->
         <scene sceneID="qAg-jF-vDL">
             <objects>
-                <viewController storyboardIdentifier="TableViewListingController" id="HeI-LW-Fr7" customClass="TableViewListingController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableViewListingController" automaticallyAdjustsScrollViewInsets="NO" id="HeI-LW-Fr7" customClass="TableViewListingController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Z2-67-X8l"/>
                         <viewControllerLayoutGuide type="bottom" id="ZL3-xm-juj"/>
@@ -233,6 +233,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NM2-NE-Wrc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="HeI-LW-Fr7" id="D9T-TX-MOf"/>
                                     <outlet property="delegate" destination="HeI-LW-Fr7" id="MhO-Dh-CCS"/>
@@ -243,7 +246,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="NM2-NE-Wrc" secondAttribute="trailing" id="6Yd-3l-WL9"/>
                             <constraint firstAttribute="bottom" secondItem="NM2-NE-Wrc" secondAttribute="bottom" id="7GY-It-XlX"/>
-                            <constraint firstItem="NM2-NE-Wrc" firstAttribute="top" secondItem="Q8v-LN-7Jc" secondAttribute="top" constant="62" id="IfH-al-Dqr"/>
+                            <constraint firstItem="NM2-NE-Wrc" firstAttribute="top" secondItem="Q8v-LN-7Jc" secondAttribute="top" id="IfH-al-Dqr"/>
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="leading" secondItem="Q8v-LN-7Jc" secondAttribute="leading" id="P6h-Ug-zlp"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -270,6 +273,8 @@
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="NM2-NE-Wrc" id="ZR0-00-LoW"/>
                     </connections>

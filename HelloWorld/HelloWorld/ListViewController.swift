@@ -14,7 +14,7 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var listItems = ["Text Field","Table View","Label"]
     
     override func viewDidLoad() {
-        
+        title = "iOS 8"
         super.viewDidLoad()
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "tableCell")
 
