@@ -191,6 +191,7 @@
                             <constraint firstAttribute="trailing" secondItem="Bmw-P8-z0e" secondAttribute="trailing" id="r67-be-5Gf"/>
                             <constraint firstItem="Bmw-P8-z0e" firstAttribute="leading" secondItem="3Dg-J6-66S" secondAttribute="leading" id="yHI-vt-FXt"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Bmw-P8-z0e"/>
@@ -262,6 +263,7 @@
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="top" secondItem="Q8v-LN-7Jc" secondAttribute="top" id="IfH-al-Dqr"/>
                             <constraint firstItem="NM2-NE-Wrc" firstAttribute="leading" secondItem="Q8v-LN-7Jc" secondAttribute="leading" id="P6h-Ug-zlp"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="NM2-NE-Wrc"/>
@@ -323,6 +325,7 @@
                             <constraint firstAttribute="bottom" secondItem="6Pc-Sh-DIy" secondAttribute="bottom" constant="-2" id="fZO-8F-TRW"/>
                             <constraint firstItem="6Pc-Sh-DIy" firstAttribute="top" secondItem="ada-15-USh" secondAttribute="top" constant="62" id="gg1-CU-BRB"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6Pc-Sh-DIy"/>
@@ -382,6 +385,7 @@
                             <constraint firstItem="tVU-da-6aA" firstAttribute="top" secondItem="CaQ-cl-5Ab" secondAttribute="top" constant="62" id="S7j-gi-4Bi"/>
                             <constraint firstAttribute="trailing" secondItem="tVU-da-6aA" secondAttribute="trailing" id="s3D-Zy-FW2"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="tVU-da-6aA"/>
@@ -425,7 +429,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-5t-gX2">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-5t-gX2">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -436,6 +440,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ncN-5t-gX2"/>
@@ -467,6 +472,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5z-Qr-2Wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -505,6 +511,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Frl-L1-WUi"/>
@@ -632,6 +639,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qi4-T2-seL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5014.5" y="134.25"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="Fza-M6-QeV">
+            <objects>
+                <viewController storyboardIdentifier="CollectionViewController" automaticallyAdjustsScrollViewInsets="NO" id="7s9-4Q-bUv" customClass="CollectionViewController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eJb-o5-qKr"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ZW-q8-if5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ux7-Of-nna">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jO4-ad-UJ8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2aT-ni-uGe">
+                                    <size key="itemSize" width="143" height="102"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7s9-4Q-bUv" id="jre-Al-5QM"/>
+                                    <outlet property="delegate" destination="7s9-4Q-bUv" id="udC-jK-quN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jO4-ad-UJ8" secondAttribute="trailing" id="8qB-tg-xtz"/>
+                            <constraint firstItem="jO4-ad-UJ8" firstAttribute="top" secondItem="Ux7-Of-nna" secondAttribute="top" id="Ccv-DW-4Yg"/>
+                            <constraint firstItem="jO4-ad-UJ8" firstAttribute="leading" secondItem="Ux7-Of-nna" secondAttribute="leading" id="FMB-s3-0Zg"/>
+                            <constraint firstAttribute="bottom" secondItem="jO4-ad-UJ8" secondAttribute="bottom" id="Tcs-6i-RWv"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jO4-ad-UJ8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8qB-tg-xtz"/>
+                                <exclude reference="Ccv-DW-4Yg"/>
+                                <exclude reference="FMB-s3-0Zg"/>
+                                <exclude reference="Tcs-6i-RWv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jO4-ad-UJ8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8qB-tg-xtz"/>
+                                <include reference="Ccv-DW-4Yg"/>
+                                <include reference="FMB-s3-0Zg"/>
+                                <include reference="Tcs-6i-RWv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="collectionView" destination="jO4-ad-UJ8" id="XXb-gZ-1LZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eK-As-L5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5604" y="126.75"/>
         </scene>
     </scenes>
 </document>

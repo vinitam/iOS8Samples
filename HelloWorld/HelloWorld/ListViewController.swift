@@ -11,7 +11,7 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     @IBOutlet var tableView : UITableView
 
-    var listItems = ["Login example","Text Field","Table View","Label"]
+    var listItems = ["Login example","Text Field","Table View","Label","Collection View"]
     
     override func viewDidLoad() {
         title = "iOS 8"
@@ -62,7 +62,11 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             var labelViewController :LabelViewController = self.storyboard.instantiateViewControllerWithIdentifier("LabelViewController") as LabelViewController
             self.navigationController.pushViewController(labelViewController, animated: true)
         }
-        
+        else if indexPath.row == 4
+        {
+            var collectionViewController :CollectionViewController = self.storyboard.instantiateViewControllerWithIdentifier("CollectionViewController") as CollectionViewController
+            self.navigationController.pushViewController(collectionViewController, animated: true)
+        }
     }
     
 
