@@ -51,6 +51,11 @@ class TableViewListingController: UIViewController {
             var simpleTableViewController :SimpleTableViewController = self.storyboard.instantiateViewControllerWithIdentifier("SimpleTableViewController") as   SimpleTableViewController
             self.navigationController.pushViewController(simpleTableViewController, animated: true)
         }
+        else if indexPath.row == 2
+        {
+            var customCellViewController :CustomCellViewController = self.storyboard.instantiateViewControllerWithIdentifier("CustomCellViewController") as   CustomCellViewController
+            self.navigationController.pushViewController(customCellViewController, animated: true)
+        }
     }
 
 
