@@ -24,7 +24,7 @@
 		EFC2B2161940BBCB004998B2 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2B2151940BBCB004998B2 /* LoggedInViewController.swift */; };
 		EFC2B21A1940C724004998B2 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2B2191940C724004998B2 /* LabelViewController.swift */; };
 		EFC2B21C1940CE4B004998B2 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2B21B1940CE4B004998B2 /* TextFieldViewController.swift */; };
-		EFC8C96619417F5E00DBD6A5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8C96519417F5E00DBD6A5 /* CollectionViewController.swift */; };
+		EFF651601941AF74008CECCD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6515F1941AF74008CECCD /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,7 @@
 		EFC2B2151940BBCB004998B2 /* LoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		EFC2B2191940C724004998B2 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		EFC2B21B1940CE4B004998B2 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
-		EFC8C96519417F5E00DBD6A5 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EFF6515F1941AF74008CECCD /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +113,8 @@
 				CDE8C368193F2FC900F4F75B /* DetailedViewController.swift */,
 				EFC2B2191940C724004998B2 /* LabelViewController.swift */,
 				EFC2B21B1940CE4B004998B2 /* TextFieldViewController.swift */,
-				EFC8C96519417F5E00DBD6A5 /* CollectionViewController.swift */,
 				CDAAB8C619402AAF007C10DA /* Constant.h */,
+				EFF6515F1941AF74008CECCD /* CollectionViewController.swift */,
 				CD2F0D64193F16A9007C8BF8 /* Main.storyboard */,
 				CD0964E919419BBC00AF813A /* CustomCellViewController.swift */,
 				CDAAB8C919403540007C10DA /* ListTableViewCell.swift */,
@@ -250,11 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC8C96619417F5E00DBD6A5 /* CollectionViewController.swift in Sources */,
 				CD61E9D21940670E005B8068 /* GroupedTableViewController.swift in Sources */,
 				EFC2B21A1940C724004998B2 /* LabelViewController.swift in Sources */,
 				CD2F0D63193F16A9007C8BF8 /* ViewController.swift in Sources */,
 				CD2F0D61193F16A9007C8BF8 /* AppDelegate.swift in Sources */,
+				EFF651601941AF74008CECCD /* CollectionViewController.swift in Sources */,
 				CD61E9D419406A19005B8068 /* SimpleTableViewController.swift in Sources */,
 				CDB75F061940650600F19530 /* TableViewListingController.swift in Sources */,
 				CD0964E6194197EE00AF813A /* CustomTableViewCell.swift in Sources */,
