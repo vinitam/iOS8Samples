@@ -11,7 +11,7 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     @IBOutlet var tableView : UITableView
 
-    var listItems = ["Login example","Text Field","Table View","Label","Collection View","Web services"]
+    var listItems = ["Login example","Text Field","Table View","Label","Collection View","Web services and JSON parsing"]
     
     override func viewDidLoad() {
         title = "iOS 8"
