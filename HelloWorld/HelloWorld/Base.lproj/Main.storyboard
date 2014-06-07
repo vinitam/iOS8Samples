@@ -709,6 +709,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ZW-q8-if5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ux7-Of-nna">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jO4-ad-UJ8">
@@ -766,6 +767,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eK-As-L5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5604" y="126.75"/>
+        </scene>
+        <!--Web Service View Controller-->
+        <scene sceneID="oam-eb-dmJ">
+            <objects>
+                <viewController storyboardIdentifier="WebServiceViewController" id="70c-ap-37m" customClass="WebServiceViewController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ihn-lG-pvQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="D8M-Lo-TfU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="25X-4i-5A8">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="o3x-n0-v0n">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="70c-ap-37m" id="ibu-fZ-lrn"/>
+                                    <outlet property="delegate" destination="70c-ap-37m" id="4p3-Qp-Sa5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="o3x-n0-v0n"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="o3x-n0-v0n"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="tableView" destination="o3x-n0-v0n" id="tyU-9f-VoC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDP-lh-tMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6172.5" y="126.75"/>
         </scene>
     </scenes>
     <resources>

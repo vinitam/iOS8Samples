@@ -11,7 +11,7 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     @IBOutlet var tableView : UITableView
 
-    var listItems = ["Login example","Text Field","Table View","Label","Collection View"]
+    var listItems = ["Login example","Text Field","Table View","Label","Collection View","Web services"]
     
     override func viewDidLoad() {
         title = "iOS 8"
@@ -66,6 +66,11 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         {
             var collectionViewController :CollectionViewController = self.storyboard.instantiateViewControllerWithIdentifier("CollectionViewController") as CollectionViewController
             self.navigationController.pushViewController(collectionViewController, animated: true)
+        }
+        else if indexPath.row == 5
+        {
+            var webServiceViewController :WebServiceViewController = self.storyboard.instantiateViewControllerWithIdentifier("WebServiceViewController") as WebServiceViewController
+            self.navigationController.pushViewController(webServiceViewController, animated: true)
         }
     }
     
