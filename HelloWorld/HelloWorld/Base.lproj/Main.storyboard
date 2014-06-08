@@ -814,6 +814,67 @@
             </objects>
             <point key="canvasLocation" x="6172.5" y="126.75"/>
         </scene>
+        <!--Parsing View Controller-->
+        <scene sceneID="Vf8-3M-wha">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRR-Mj-DKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="XMLParsingViewController" id="ISC-Mr-9OJ" customClass="XMLParsingViewController" customModule="iOS8SampleCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tfc-xW-yaW"/>
+                        <viewControllerLayoutGuide type="bottom" id="pLK-6T-HNf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DUz-HJ-DQq">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BgU-gf-ekW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ISC-Mr-9OJ" id="F5p-y4-P51"/>
+                                    <outlet property="delegate" destination="ISC-Mr-9OJ" id="Ch1-65-o2A"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BgU-gf-ekW" secondAttribute="bottom" id="2Ay-km-M4f"/>
+                            <constraint firstItem="BgU-gf-ekW" firstAttribute="top" secondItem="DUz-HJ-DQq" secondAttribute="top" id="Bgj-fR-cGo"/>
+                            <constraint firstItem="BgU-gf-ekW" firstAttribute="leading" secondItem="DUz-HJ-DQq" secondAttribute="leading" id="Gda-PP-DbY"/>
+                            <constraint firstAttribute="trailing" secondItem="BgU-gf-ekW" secondAttribute="trailing" id="oAi-IE-CUT"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BgU-gf-ekW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Ay-km-M4f"/>
+                                <exclude reference="Bgj-fR-cGo"/>
+                                <exclude reference="Gda-PP-DbY"/>
+                                <exclude reference="oAi-IE-CUT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="BgU-gf-ekW"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2Ay-km-M4f"/>
+                                <include reference="Bgj-fR-cGo"/>
+                                <include reference="Gda-PP-DbY"/>
+                                <include reference="oAi-IE-CUT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="tableView" destination="BgU-gf-ekW" id="lRP-4Q-eGB"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="6712.5" y="125.25"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg.jpg" width="1920" height="1200"/>

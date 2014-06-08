@@ -21,6 +21,7 @@
 		CDAAB8CA19403540007C10DA /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAAB8C919403540007C10DA /* ListTableViewCell.swift */; };
 		CDB75F061940650600F19530 /* TableViewListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB75F051940650600F19530 /* TableViewListingController.swift */; };
 		CDE8C369193F2FC900F4F75B /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE8C368193F2FC900F4F75B /* DetailedViewController.swift */; };
+		EFC22DF1194463B20047E14A /* XMLParsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC22DF0194463B20047E14A /* XMLParsingViewController.swift */; };
 		EFC2B2161940BBCB004998B2 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2B2151940BBCB004998B2 /* LoggedInViewController.swift */; };
 		EFC2B21A1940C724004998B2 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2B2191940C724004998B2 /* LabelViewController.swift */; };
 		EFC2B21C1940CE4B004998B2 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC2B21B1940CE4B004998B2 /* TextFieldViewController.swift */; };
@@ -58,6 +59,7 @@
 		CDAAB8C919403540007C10DA /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		CDB75F051940650600F19530 /* TableViewListingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewListingController.swift; sourceTree = "<group>"; };
 		CDE8C368193F2FC900F4F75B /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		EFC22DF0194463B20047E14A /* XMLParsingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParsingViewController.swift; sourceTree = "<group>"; };
 		EFC2B2151940BBCB004998B2 /* LoggedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		EFC2B2191940C724004998B2 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		EFC2B21B1940CE4B004998B2 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				EFC2B21B1940CE4B004998B2 /* TextFieldViewController.swift */,
 				CDAAB8C619402AAF007C10DA /* Constant.h */,
 				EFF651611941B09E008CECCD /* WebServiceViewController.swift */,
+				EFC22DF0194463B20047E14A /* XMLParsingViewController.swift */,
 				EFF6515F1941AF74008CECCD /* CollectionViewController.swift */,
 				CD2F0D64193F16A9007C8BF8 /* Main.storyboard */,
 				CD0964E919419BBC00AF813A /* CustomCellViewController.swift */,
@@ -266,6 +269,7 @@
 				EFF651621941B09E008CECCD /* WebServiceViewController.swift in Sources */,
 				EFC2B2161940BBCB004998B2 /* LoggedInViewController.swift in Sources */,
 				CD2F0D80193F2204007C8BF8 /* ListViewController.swift in Sources */,
+				EFC22DF1194463B20047E14A /* XMLParsingViewController.swift in Sources */,
 				CDAAB8CA19403540007C10DA /* ListTableViewCell.swift in Sources */,
 				CD0964EA19419BBC00AF813A /* CustomCellViewController.swift in Sources */,
 			);

@@ -38,8 +38,6 @@ class WebServiceViewController: UIViewController,NSURLSessionDelegate {
         
         
         task.resume()
-        println("Resumed")
-
         
         
         // Do any additional setup after loading the view.

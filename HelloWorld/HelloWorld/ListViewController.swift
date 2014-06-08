@@ -11,7 +11,7 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     @IBOutlet var tableView : UITableView
 
-    var listItems = ["Login example","Text Field","Table View","Label","Collection View","Web services and JSON parsing"]
+    var listItems = ["Login example","Text Field","Table View","Label","Collection View","Web services and JSON parsing","Web services and XML parsing"]
     
     override func viewDidLoad() {
         title = "iOS 8"
@@ -71,6 +71,11 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         {
             var webServiceViewController :WebServiceViewController = self.storyboard.instantiateViewControllerWithIdentifier("WebServiceViewController") as WebServiceViewController
             self.navigationController.pushViewController(webServiceViewController, animated: true)
+        }
+        else if indexPath.row == 6
+        {
+            var xmlParsingViewController :XMLParsingViewController = self.storyboard.instantiateViewControllerWithIdentifier("XMLParsingViewController") as XMLParsingViewController
+            self.navigationController.pushViewController(xmlParsingViewController, animated: true)
         }
     }
     
